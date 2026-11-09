@@ -1,7 +1,7 @@
 const CACHE_PREFIX = 'mi-billetera-lite-'
 const CACHE_NAME = `${CACHE_PREFIX}v1`
-const BASE_PATH = '/Billetera-Lite/'
-const PRECACHE_ASSETS = ["/Billetera-Lite/assets/index-BxBAxJNj.js","/Billetera-Lite/assets/index-CMsAc8v4.css"]
+const BASE_PATH = '/'
+const PRECACHE_ASSETS = ["/assets/index-CMsAc8v4.css","/assets/index-CeKMu2c6.js"]
 const APP_SHELL = [
   `${BASE_PATH}`,
   `${BASE_PATH}index.html`,
