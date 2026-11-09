@@ -29,6 +29,22 @@ Para comprobar la experiencia offline, abre la aplicación una vez con conexión
 usa DevTools > Network > Offline y recarga. El manifest y el service worker se
 pueden revisar en DevTools > Application.
 
+## Publicar en GitHub Pages
+
+El repositorio actual es `TorresTG/Billetera-Lite`, por lo que la URL de Pages
+será:
+
+`https://torrestg.github.io/Billetera-Lite/`
+
+El workflow `.github/workflows/deploy-pages.yml` compila y publica
+automáticamente cada push a `main`. En GitHub, configura **Settings >
+Pages > Source** como **GitHub Actions**. Si Pages estaba configurado como
+`Deploy from a branch`, cambia esa opción para que el workflow pueda publicar.
+
+La URL raíz `https://torrestg.github.io/` requiere que el repositorio se llame
+exactamente `TorresTG/torrestg.github.io`; no se puede obtener desde el
+repositorio actual sin renombrarlo o crear ese repositorio de usuario.
+
 ## Alcance
 
 La aplicación incluye manifest instalable, iconos locales de 192x192 y 512x512,

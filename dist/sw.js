@@ -1,12 +1,13 @@
 const CACHE_PREFIX = 'mi-billetera-lite-'
 const CACHE_NAME = `${CACHE_PREFIX}v1`
-const PRECACHE_ASSETS = ["/assets/index-CMsAc8v4.css","/assets/index-CeKMu2c6.js"]
+const BASE_PATH = '/Billetera-Lite/'
+const PRECACHE_ASSETS = ["/Billetera-Lite/assets/index-BxBAxJNj.js","/Billetera-Lite/assets/index-CMsAc8v4.css"]
 const APP_SHELL = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png',
+  `${BASE_PATH}`,
+  `${BASE_PATH}index.html`,
+  `${BASE_PATH}manifest.json`,
+  `${BASE_PATH}icons/icon-192.png`,
+  `${BASE_PATH}icons/icon-512.png`,
   ...PRECACHE_ASSETS,
 ]
 
@@ -63,7 +64,7 @@ self.addEventListener('fetch', (event) => {
         })
         .catch(() => {
           if (event.request.mode === 'navigate') {
-            return caches.match('/index.html').then(
+            return caches.match(`${BASE_PATH}index.html`).then(
               (fallbackResponse) =>
                 fallbackResponse ??
                 new Response(

@@ -1,8 +1,8 @@
 {
   "name": "Mi Billetera Lite",
   "short_name": "Billetera Lite",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#0f766e",
   "background_color": "#f0fdfa",
