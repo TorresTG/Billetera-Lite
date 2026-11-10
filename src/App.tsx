@@ -217,7 +217,7 @@ function App() {
               <p className="eyebrow">Actividad reciente</p>
               <h2 id="history-title">Historial de gastos</h2>
             </div>
-            <span className="offline-badge">Disponible offline</span>
+        
           </div>
 
           {expenses.length === 0 ? (
